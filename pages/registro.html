@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+
+<body>
+    <!-- Formulario de registro de usuario. -->
+    <form class="login" action="../php/registrando_usuario.php" method="post">
+        <p>
+            <label for="correo">Correo electrónico</label>
+            <input type="text" class="correo" placeholder="Ingresa tu correo electrónico" name="correo"
+                onchange="validar_correo(correo, 1)" required>
+            <!-- Etiqueta de error que se modifica con el Javascript. -->
+        <p class="error" id="error_correo"></p>
+        </p>
+        <p>
+            <label for="password1">Contraseña</label>
+            <input type="password" class="password" placeholder="Ingresa tu contraseña" name="password1" maxlength="16"
+                onchange="validar_password(password1, 1)" required>
+            <!-- Etiquetas de error que se modifican con el Javascript. -->
+        <p class="error" id="error_espacios"></p>
+        <p class="error" id="error_caracter"></p>
+        <p class="error" id="error_numero"></p>
+        <p class="error" id="error_mayuscula"></p>
+        <p class="error" id="error_menor_ocho"></p>
+        </p>
+        <p>
+            <label for="password2">Repite tu contraseña</label>
+            <input type="password" class="password" placeholder="Repite tu contraseña" name="password2" maxlength="16"
+                onchange="crear_usuario(correo, password1, password2)" required>
+            <!-- Etiqueta de error que se modifica con el Javascript. -->
+        <p class="error" id="passwords_coinciden"></p>
+        </p>
+        <!-- El botón de enviar se activa hasta que se cumplan las condiciones del Javascript. -->
+        <input type="submit" name="login" id="login" value="Enviar" disabled>
+        <input type="reset" value="Reestablecer">
+        <p><a class="enlaces" href="../index.html">Regresar</a></p>
+    </form>
+    <!-- Javascript con las funciones de comprobación. El Javascript se pone al final, según documentación de Mozilla, para evitar errores.-->
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+/* Etiquetas nativas */
+
+body {
+    background-color: #badffb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #105d97;
+    height: 50px;
+    font-size: 25px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    height: 900px;
+}
+
+article {
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+}
+
+section {
+    float: left;
+    margin-left: 20px;
+}
+
+footer {
+    float: left;
+    background-color: #127ac9;
+    width: 100%;
+    height: 150px;
+    color: white;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 408px;
+    height: 306px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Clases */
+
+article.principal {
+    float: left;
+    width: 60%;
+    height: 100%;
+    color: #ffff;
+    background-color: #105d97;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+article.arriba {
+    height: 300px;
+}
+
+article.abajo {
+    height: 500px;
+}
+
+section.dos {
+    width: 45%;
+}
+
+section.tres {
+    width: 30%;
+}
+
+section.footer {
+    height: inherit;
+}
+
+section.izquierda {
+    width: 75%;
+}
+
+section.derecha {
+    width: 22%;
+}
+
+ul.nav {
+    list-style-type: none;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+li.nav {
+    display: block;
+    float: left;
+    height: inherit;
+    width: 50%;
+    text-align: center;
+}
+
+p.header {
+    text-align: center;
+    font-size: 18px;
+}
+
+p.centrado {
+    text-align: center;
+}
+
+p.justificado {
+    text-align: justify;
+}
+
+p.footer {
+    display: block;
+    text-align: center;
+    font-size: 45px;
+    padding: 10px 0 0 0
+}
+
+p.error {
+    font-size: 12px;
+    color: #fcaeae;
+}
+
+a.nav {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px 0 0 0;
+}
+
+a.img {
+    display: block;
+    padding: 50% 0 0 0;
+}
+
+a.enlaces {
+    color: #d89b40;
+}
+
+form.login {
+    float: left;
+    background-color: #105d97;
+    width: 200px;
+    height: 400px;
+    padding: 50px;
+    color: #ffff;
+}
+
+input.correo {
+    width: 160px;
+}
+ 
+input.password {
+    width: 140px;
+}
+
+table {
+    margin: 0 auto;
+    border:1px solid #000;
+    /* Es para que los bordes de la tabla sean gruesos*/
+    border-collapse: separate;
+}
+
+td {
+    border:1px solid #000;
+    padding: 20px;
+}
+
+tr:hover {
+    background: rgb(112, 111, 111);
+}
+
+.publicacion{
+    padding-left: 25%;
+}
+
+section.botones {
+    margin-left: 25%;
+}

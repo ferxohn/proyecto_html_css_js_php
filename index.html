@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    <!-- Formulario de inicio de sesión. -->
+    <form class="login" action="php/login_validacion.php" method="post">
+        <p>
+            <label for="correo">Correo electrónico</label>
+            <input type="text" class="correo" placeholder="Ingresa tu correo electrónico" name="correo" required>
+        </p>
+        <p>
+            <label for="password">Contraseña</label>
+            <input type="password" class="password" placeholder="Ingresa tu contraseña" name="password"
+                onchange="validar_login(correo, password)" required>
+        </p>
+        <!-- El botón de enviar se activa hasta que se cumplan las condiciones del Javascript. -->
+        <input type="submit" name="login" id="login" value="Enviar" disabled>
+        <input type="reset" value="Reestablecer">
+
+        <!-- Etiqueta de error que se modifica con el Javascript. -->
+        <p class="error" id="error"></p>
+        <p><a class="enlaces" href="pages/registro.html">Registrar un nuevo usuario</a></p>
+    </form>
+</body>
+
+</html>
